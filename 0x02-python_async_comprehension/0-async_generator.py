@@ -2,10 +2,10 @@
 """asyncio task"""
 import random
 import asyncio
-from typing import AsyncGenerator
+from typing import Generator
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None]:
     """
     Coroutine that loops 10 times, asynchronously waits for 1 second each time,
     then yields a random number between 0 and 10.
